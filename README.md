@@ -1,6 +1,76 @@
 # Mijn-portfolio
 https://41475.hosts1.ma-cloud.nl/FS%20Portfolio/
 
+## Getting started
+
+function setup() {
+    createCanvas(700, 600);
+}
+
+function draw() {
+    background(0, 160, 190);
+  fill("Yellow")
+  stroke("Orange")
+  strokeWeight(3)
+    circle(620, 80, 130);
+  fill("Green")
+  strokeWeight(0.4)
+  stroke("Black")
+  text("🌲", 200, 340)
+  textSize(120)
+  text("🌲", 70, 340)
+  text("🌲", 300, 340)
+  textSize(80)
+  text("🌲", 500, 340)
+  rect(0, 350, 700, 370)
+  strokeWeight(0)
+  fill("white")
+  ellipse(200, 150, 170, 70)
+  ellipse(350, 110, 110, 40)
+  textSize(100)
+  text("🏕️", 400, 460)
+  textSize(50)
+  text("🔥", 310, 470)
+  textSize(100)
+  text("🏕️", 150, 420)
+}
+
+
+## Variables and change
+
+let cloudOneX = 100;
+let cloudTwoX = 160;
+
+function setup() {
+    createCanvas(700, 600);
+}
+
+function draw() {
+    background(60, 110, 220);
+
+    strokeWeight(0);
+    fill("green");
+    rect(0, 400, 800, 300);
+
+    fill("yellow");
+    stroke("orange");
+    strokeWeight(2);
+    circle(680, 30, 130)
+
+    fill("white");
+    strokeWeight(1);
+    stroke("black");
+    ellipse(cloudTwoX, 220, 120, 50);
+
+    fill("white");
+    strokeWeight(1);
+    stroke("black");
+    ellipse(cloudOneX, 200, 150, 70);
+
+    cloudOneX = framecount % width
+    cloudTwoX = framecount % width
+}
+
 ## Conditionals and interactivity:
 
 function setup() {
